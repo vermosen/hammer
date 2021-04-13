@@ -1,12 +1,11 @@
 [build-system]
-requires = ["flit_core >=2,<4"]
-build-backend = "flit_core.buildapi"
+requires = [
+  "python>=3.8", 
+  "setuptools>=42",
+  "wheel",
+  "cmake", 
+  "pybind11~=2.6.0"
+  "scikit-build"
+]
 
-[tool.flit.metadata]
-module = "hammer"
-author = "Jean-Mathieu Vermosen"
-author-email = "vermosen@yahoo.com"
-home-page = "https://github.com/vermosen/hammer"
-classifiers = [ "License :: OSI Approved :: MIT License",]
-description-file = "README.md"
-
+build-backend = "setuptools.build_meta"
